@@ -1,51 +1,537 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Underspire Master Vox</title>
-        
-        <!-- Adding in Bootstrap CSS & JS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
+<html lang="en">
 
-        <div class="ticker-wrap">
-            <div class="newscast">
-                <div class="newsitem">
-                    |  Xenos fleet rumoured near Voss Prime  |
-                </div>
-                <div class="newsitem">
-                    |  Fortress-Precinct 113 welcomes new Captain  |
-                </div>
-                <div class="newsitem">
-                    |  Imperial Guard conscription rate to increase 25%  |
-                </div>
-                <div class="newsitem">
-                    |  Paile Company traders return to Necromunda for business  |
-                </div>
-                <div class="newsitem">
-                    |  New Pit Champion: Obed Thrul dominates underground fighting circuit  |
-                </div>
-                <div class="newsitem">
-                    |  Witchcraft Afoot at Peacock Club, accusers claim |
-                </div>
-                <div class="newsitem">
-                    |  Trouble in the Lower Levels: Mutant Horde threatens Guilder Convoys   |
-                </div>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Underspire Master Vox</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.css" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/VoxStation.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">MASTER VOX</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://discord.gg/pT6MZ6ZY7M" class="discord"><i class="bx bxl-discord"></i></a>
+          <a href="https://necrodamus.org/" class="necrovox"><i class="bx bx-clipboard"></i></a>
+          <a href="https://yaktribe.games/underhive" class="yaktribe"><i class="bx bx-customize"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#news" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>News</span></a></li>
+          <li><a href="#gangs" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Gangs</span></a></li>
+          <li><a href="#map" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Map</span></a></li>
+          <li><a href="#bounties" class="nav-link scrollto"><i class="bx bx-target-lock"></i> <span>Bounties</span></a></li>
+          <li><a href="#enforcers" class="nav-link scrollto"><i class="bi bi-shield-lock"></i> <span>Enforcers</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Master Vox</h1>
+      <p><span class="typed" data-typed-items="Imperator Protegit, The Emperor Protects"></span></p>
+      <div class="head-details">
+        <p><strong>Underspire Section 66 - Basin</strong></p>
+        <p>Campaign Season 1</p>
+        <p>CURRENT CYCLE - 1/7</p>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="news" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>News</h2>
+          <p>Alerts and reports drawn from the Master Vox informant network across the Basin!</p>
         </div>
 
-        <div class="heading-holder">
-            <div class="heading">   
-                <h1>UNDERSPIRE</h1>
-                <h2>Master Vox</h2>
-            </div>
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-conflict">Conflict</li>
+              <li data-filter=".filter-commerce">Commerce</li>
+              <li data-filter=".filter-politics">Politics</li>
+            </ul>
+          </div>
         </div>
 
-    </body>
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-politics">
+            <a href="news/new-captain.html" title="New Precinct Captain appointed to Fortress-Precinct 113">
+              <div class="portfolio-wrap">
+                <img src="assets/img/news/enforcer-captain.jpg" class="img-fluid" alt="">
+                <span>New Precinct Captain appointed to Fortress-Precinct 113</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-commerce">
+            <a href="news/new-captain.html" title="Paile Company traders return to the Basin">
+              <div class="portfolio-wrap">
+                <img src="assets/img/news/MaugerPaile.png" class="img-fluid" alt="">
+                <span>Paile Company traders return to the Basin</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-conflict">
+            <a href="news/new-captain.html" title="Trouble in the Lower Levels: Mutant Horde threatens Guilder Convoys">
+              <div class="portfolio-wrap">
+                <img src="assets/img/news/LowerLevels.png" class="img-fluid" alt="">
+                <span>Trouble in the Lower Levels: Mutant Horde threatens Guilder Convoys</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="gangs" class="gangs">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Gangs</h2>
+          <p>Excluding <i>minor factions</i> and the <b>Enforcers</b>, there are currently <b>7</b> gangs vying for position in the Basin sector of the Underspire.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-right">
+            <table id="gangTable" class="display">
+              <thead>
+                  <tr>
+                      <th>Gang</th>
+                      <th>Territories</th>
+                      <th>Reputation</th>
+                      <th>Wealth</th>
+                      <th>Alignment</th>
+                      <th>Alliance</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Nightshades</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>1,000Cr</td>
+                      <td>Law Abiding</td>
+                      <td>None</td>
+                  </tr>
+                  <tr>
+                    <td>Machinac Mori</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1,000Cr</td>
+                    <td>Law Abiding</td>
+                    <td>None</td>
+                  </tr>
+                  <tr>
+                    <td>Wildhunt</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1,000Cr</td>
+                    <td>Outlaw</td>
+                    <td>None</td>
+                  </tr>
+                  <tr>
+                    <td>Flayers of Flesh</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1,000Cr</td>
+                    <td>Outlaw</td>
+                    <td>None</td>
+                  </tr>
+                  <tr>
+                    <td>Scrabuss</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1,000Cr</td>
+                    <td>Outlaw</td>
+                    <td>None</td>
+                  </tr>
+                  <tr>
+                    <td>Saviours of the Chosen Brood</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1,000Cr</td>
+                    <td>Outlaw</td>
+                    <td>None</td>
+                  </tr>
+                  <tr>
+                    <td>Erasmus Gilgamann</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1,000Cr</td>
+                    <td>Outlaw</td>
+                    <td>None</td>
+                  </tr>
+              </tbody>
+          </table>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Gangs Section -->
+
+     <!-- ======= Facts Section ======= -->
+     <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Accolades</h2>
+          <p>There are <b>7</b> accolades to be won by the competing gangs, at the end of the Campaign Season.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bx bx-crown"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>King of the Basin</strong> Tied</p>
+              <p>Most Territories Held</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-coin"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Pricemaster</strong> Tied</p>
+              <p>Greatest Wealth</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-trophy"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hive Legend</strong> Tied</p>
+              <p>Greatest Reputation</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-shield"></i>
+              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Warlord</strong> Tied</p>
+              <p>Most Battles Fought</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bx bx-medal"></i>
+              <span data-purecounter-start="0" data-purecounter-end="220" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Top Dog</strong> Undetermined</p>
+              <p>Highest Value Individual</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bx bx-group"></i>
+              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Corpse Farmer</strong> Tied</p>
+              <p>Most Dead Gang Members</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bx bxs-check-shield"></i>
+              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Fixer</strong> Tied</p>
+              <p>Most Successful Sector Missions</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Map Section ======= -->
+    <section id="map" class="map section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Map</h2>
+          <p>The Basin can be loosely divided into <b>24</b> territories of distinct productive nature (excluding Gang Hideouts), surrounded by chasms and inter-sector walls. Gangs contest control of these territories regularly. Individual territories on the map below can be clicked for further information.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <img class="hivemap-img" src="assets/img/map.png" usemap="#image-map">
+
+          <map class="hivemap" name="image-map">
+            <area target="" alt="Flying Cadian" title="Flying Cadian" href="t/flying-cadian.html" coords="87,918,139,919,161,960,140,1001,92,1003,70,961" shape="poly">
+            <area target="" alt="Freetown" title="Freetown" href="t/freetown.html" coords="141,1002,158,962,210,962,228,920,278,920,302,962,281,1002,299,1040,281,1082,227,1080,211,1045,161,1042" shape="poly">
+            <area target="" alt="The Pit" title="The Pit" href="t/pit.html" coords="302,962,280,1002,298,1040,278,1083,300,1120,348,1121,371,1159,421,1163,438,1123,489,1121,512,1084,490,1042,512,1003,490,963,441,962,421,924,371,921,352,961" shape="poly">
+            <area target="" alt="South Ruins" title="South Ruins" href="t/south-ruins.html" coords="70,882,89,920,137,923,158,961,207,960,225,924,279,923,300,961,352,961,371,920,352,881,372,844,421,839,440,801,421,763,440,724,421,683,372,678,351,717,302,721,281,762,233,761,207,720,158,723,141,759,92,761,70,801,90,839" shape="poly">
+            <area target="" alt="Oldtown" title="Oldtown" href="t/oldtown.html" coords="209,720,161,721,141,682,91,679,70,642,92,605,71,562,90,523,71,483,92,440,141,440,158,402,211,401,230,363,280,361,302,402,349,402,371,440,421,443,444,481,423,522,438,562,421,604,441,643,419,678,371,682,352,722,298,722,281,762,236,766" shape="poly">
+            <area target="" alt="The Rift Between Worlds" title="The Rift Between Worlds" href="t/rift.html" coords="92,362,72,401,87,441,139,442,158,399,141,359" shape="poly">
+            <area target="" alt="North Ruins" title="North Ruins" href="t/north-ruins.html" coords="89,362,71,322,91,284,141,282,159,239,208,242,229,279,282,282,299,243,350,242,371,282,421,282,441,323,421,359,438,399,420,442,371,442,347,405,302,403,279,365,228,363,210,402,159,403,144,360" shape="poly">
+            <area target="" alt="Hogweed House" title="Hogweed House" href="t/hogweed-house.html" coords="441,162,419,199,440,243,490,241,512,202,490,160" shape="poly">
+            <area target="" alt="The Peacock" title="The Peacock" href="t/peacock.html" coords="438,241,419,280,442,322,420,361,440,400,423,440,443,483,492,481,510,444,561,442,579,401,561,358,579,319,565,279,511,278,490,240" shape="poly">
+            <area target="" alt="Stiller's Street" title="Stiller's Street" href="t/stillers-street.html" coords="513,201,490,243,510,281,561,285,579,323,562,362,581,403,562,441,512,442,490,483,510,521,563,522,576,481,629,479,650,442,628,402,650,365,631,323,651,281,631,238,579,240,562,199" shape="poly">
+            <area target="" alt="Sacred Throne Clinic" title="Sacred Throne Clinic" href="t/sacred-throne-clinic.html" coords="441,561,419,603,437,641,491,642,511,598,491,560" shape="poly">
+            <area target="" alt="Stygia Bazaar" title="Stygia Bazaar" href="t/stygia-bazaar.html" coords="490,641,441,643,420,681,441,722,421,761,441,800,493,802,510,841,562,841,581,803,561,761,581,720,562,680,508,680" shape="poly">
+            <area target="" alt="Mordo's" title="Mordo's" href="t/mordos.html" coords="492,804,442,801,420,842,438,879,488,881,511,922,561,922,580,882,562,842,510,842" shape="poly">
+            <area target="" alt="The Nexus" title="The Nexus" href="t/nexus.html" coords="511,922,490,961,511,1003,562,1002,582,962,559,921" shape="poly">
+            <area target="" alt="Port Profit" title="Port Profit" href="t/port-profit.html" coords="582,561,562,600,510,602,492,642,510,680,558,682,579,721,631,721,650,683,629,642,651,604,633,561" shape="poly">
+            <area target="" alt="Precinct-Fortress 113" title="Precinct-Fortress 113" href="t/precinct-fortress.html" coords="574,481,558,521,580,558,629,562,649,521,631,481" shape="poly">
+            <area target="" alt="The Scrap Mines" title="The Scrap Mines" href="t/scrap-mines.html" coords="582,882,558,924,582,962,562,1003,582,1041,631,1043,650,1082,703,1082,722,1042,772,1043,791,1083,842,1082,861,1041,841,1002,862,962,840,922,788,922,772,881,721,882,698,841,650,839,631,883" shape="poly">
+            <area target="" alt="Bliss Towers" title="Bliss Towers" href="t/bliss-towers.html" coords="774,162,719,163,698,202,650,201,631,244,651,282,631,327,651,362,700,363,721,322,772,322,791,284,769,242,790,202" shape="poly">
+            <area target="" alt="Electric Substation AE/14" title="Electric Substation AE/14" href="t/electric-substation.html" coords="631,562,651,523,631,484,650,442,701,442,721,401,772,402,788,442,769,485,791,522,771,562,722,561,700,604,650,605" shape="poly">
+            <area target="" alt="Manufactorium Pyramis" title="Manufactorium Pyramis" href="t/manufactorium-pyramis.html" coords="771,158,789,122,842,121,859,162,911,163,929,201,982,203,1001,241,982,281,931,282,911,322,861,322,841,362,790,362,771,319,791,282,771,238,790,207" shape="poly">
+            <area target="" alt="Kane Street" title="Kane Street" href="t/kane-street.html" coords="910,163,930,122,983,121,999,162,980,201,928,202" shape="poly">
+            <area target="" alt="Rust Hill" title="Rust Hill" href="t/rust-hill.html" coords="791,363,770,403,789,440,841,442,860,484,912,483,930,442,982,442,999,402,980,363,928,359,911,323,861,322,842,361" shape="poly">
+            <area target="" alt="East Ruins" title="East Ruins" href="t/east-ruins.html" coords="1001,162,1051,162,1069,202,1121,202,1139,242,1121,284,1141,323,1121,363,1141,402,1122,443,1070,443,1051,482,999,484,982,441,999,403,979,363,930,362,909,324,930,282,983,280,1001,239,979,204" shape="poly">
+            <area target="" alt="The Blender" title="The Blender" href="t/blender.html" coords="930,523,982,522,999,484,1051,483,1072,520,1120,520,1142,558,1118,601,1072,602,1050,642,1000,642,981,602,928,600,911,562" shape="poly">
+            <area target="" alt="The Flyway" title="The Flyway" href="t/flyway.html" coords="582,803,559,764,581,720,633,719,650,679,702,682,720,642,772,640,790,600,771,561,790,522,771,482,790,441,840,442,859,484,841,520,860,562,842,599,859,642,841,678,791,681,771,719,719,720,701,761,648,763,631,801" shape="poly">
+            <area target="" alt="The Bleeding Caves" title="The Bleeding Caves" href="t/bleeding-caves.html" coords="1070,602,1121,602,1139,641,1122,682,1070,683,1050,642" shape="poly">
+            <area target="" alt="The Fuel Yards" title="The Fuel Yards" href="t/fuel-yards.html" coords="631,804,651,762,702,762,722,719,771,721,790,679,841,679,859,642,911,642,929,682,911,721,930,762,911,801,859,801,841,842,790,843,771,881,719,881,701,844,649,843" shape="poly">
+            <area target="" alt="Muck Rapids" title="Muck Rapids" href="t/muck-rapids.html" coords="931,601,911,641,930,685,911,725,930,763,979,763,1001,801,1050,803,1070,841,1119,842,1141,805,1120,762,1142,722,1121,682,1070,681,1051,642,999,641,978,601" shape="poly">
+            <area target="" alt="The Dinge" title="The Dinge" href="t/dinge.html" coords="999,803,981,842,930,842,911,882,930,921,980,921,1000,964,981,1005,999,1041,1050,1041,1070,1083,1122,1083,1142,1043,1193,1042,1211,1003,1190,964,1212,921,1191,880,1142,880,1117,840,1072,841,1049,804" shape="poly">
+            <area target="" alt="The Heap" title="The Heap" href="t/heap.html" coords="1001,1124,1051,1125,1070,1081,1051,1042,1000,1044,981,1083" shape="poly">
+            <area target="" alt="The Chop Shops" title="The Chop Shops" href="t/chop-shops.html" coords="861,1120,840,1080,862,1039,840,1005,861,963,840,924,789,922,771,880,789,843,839,842,859,880,911,883,930,921,979,921,998,964,984,998,999,1039,980,1082,1001,1123,982,1161,929,1160,911,1119" shape="poly">
+            <area target="" alt="The Needleways" title="The Needleways" href="t/needleways.html" coords="440,883,421,920,440,960,487,961,508,923,492,882" shape="poly">
+            <area target="" alt="The Needleways" title="The Needleways" href="t/needleways.html" coords="444,481,420,524,438,560,490,560,510,523,490,482" shape="poly">
+            <area target="" alt="The Needleways" title="The Needleways" href="t/needleways.html" coords="702,363,720,322,770,322,788,361,771,400,719,400" shape="poly">
+            <area target="" alt="The Needleways" title="The Needleways" href="t/needleways.html" coords="861,882,842,844,859,803,910,803,930,842,911,881" shape="poly">
+          </map>
+        </div>
+
+      </div>
+    </section><!-- End Map Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="bounties" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Bounties</h2>
+          <p>The below listed Bounty Hunters have made themselves available for hire to the gangs of the Basin. To negotiate terms, contact the Arbitrator.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  If it lives, I'll kill it. If it's dead, I'll kill it again.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/hunters/thrul.jpeg" class="testimonial-img" alt="">
+                <h3>Obed Thrul</h3>
+                <h4>The Beast of the East</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Ibrizza de Chambaal</h3>
+                <h4>Outcast Assassin</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Hans van der Huff</h3>
+                <h4>Guard Veteran</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Wormstone</h3>
+                <h4>Masked Mystery</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="enforcers" class="skills">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Enforcers</h2>
+          <p>The <strong>Enforcers</strong> are the boogeyman of the Basin. Empowered to uphold Planetary Law with lethal force, they will crack down hard on any gang that gets too big for its britches. Their exact behaviour depends on four factors:</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Aggression <i class="val">25%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Corruption <i class="val">25%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <p data-aos="fade-up">The Enforcers are currently <strong>Night Watch</strong>. </p>
+          <p data-aos="fade-up">They will prioritize policing neutral territories, cooperation with Law Abiding gangs</p>
+
+        </div>
+
+        <div class="row services">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        Free project not associated with Games Workshop.
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
